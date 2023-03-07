@@ -1,0 +1,158 @@
+body {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Avenir Roman";
+  src: local("Avenir Roman"), local("Avenir-Roman"),
+    url("../assets/fonts/Avenir-Roman.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Avenir Black";
+  src: local("Avenir Black"), local("Avenir-Black"),
+    url("../assets/fonts/Avenir Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Avenir Medium";
+  src: local("Avenir Medium"), local("Avenir-Medium"),
+    url("../assets/fonts/Avenir Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Acier";
+  src: local("Acier"),
+    url("../assets/fonts/acier-text-solid.ttf") format("truetype");
+}
+
+.main {
+  background: url("../assets/background.png") no-repeat center;
+  background-size: cover;
+  padding: 30px 0 15px 0;
+  height: calc(100vh - 124px);
+  background-position: 50% 20%;
+}
+
+.logo {
+  max-width: 130px;
+  margin-bottom: 110px;
+}
+
+.heading {
+  font-size: 100px;
+  text-align: center;
+  font-family: "Acier";
+  color: #fff;
+  line-height: 80px;
+  margin-bottom: 25px;
+}
+
+.caption {
+  font-size: 25px;
+  font-family: "Avenir Medium";
+  text-align: center;
+  color: #fff;
+}
+
+.animation {
+  max-width: 500px;
+  max-height: 250px;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #fff;
+  font-size: 15px;
+  margin: 0;
+  font-family: "Avenir Medium";
+}
+
+a.link {
+  color: #fff;
+  display: none;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+footer {
+  display: flex;
+  padding: 50px;
+  background-color: #273463;
+}
+
+footer span {
+  color: #fff;
+  font-family: "Avenir Roman";
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Avenir Black";
+}
+
+@media (max-width: 1600px) {
+  .main {
+    height: calc(100vh - 84px);
+  }
+  .logo {
+    margin-bottom: 50px;
+  }
+  .heading {
+    font-size: 70px;
+    line-height: 55px;
+    margin: 5px;
+  }
+  .caption {
+    font-size: 20px;
+  }
+  .animation {
+    max-width: 350px;
+    max-height: 175px;
+  }
+  .description {
+    font-size: 10px;
+  }
+  footer {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    height: 100vh;
+  }
+
+  .logo {
+    margin-bottom: 50px;
+  }
+
+  .heading {
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+  .caption {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 10px;
+  }
+
+  .animation {
+    margin-bottom: 20px;
+    max-width: 300px;
+    max-height: 150px;
+  }
+
+  .link {
+    display: block !important;
+  }
+
+  footer {
+    display: none !important;
+    background: none;
+  }
+}
